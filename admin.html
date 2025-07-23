@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure | Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="glass-header">
+    <div class="logo"><i class="fas fa-cogs"></i> Admin Panel</div>
+    <a href="index.html" class="btn btn-primary">Back to Shop</a>
+  </header>
+
+  <section class="admin-container fade-up">
+    <h2>Add New Product</h2>
+    <form id="productForm" class="glass-card">
+      <input type="text" id="name" placeholder="Product Name" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="text" id="image" placeholder="Image URL" required>
+      <select id="category" required>
+        <option value="Electronics">Electronics</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Home">Home</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+
+    <h2>Manage Products</h2>
+    <div id="admin-products" class="glass-card"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
